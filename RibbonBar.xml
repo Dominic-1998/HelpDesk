@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<RibbonBar BuiltinTheme="0" Font="FaceName:Tahoma; TextSize:12">
+  <RibbonItems>
+     <ApplicationButton Text="Menu" Enabled="true" Tag="Menu" Visible="true">
+      <ApplicationMenu>
+        <Master>
+          <Item Text="Options" PictureName="OptionsBig!" Checked="false" Enabled="true" Tag="Options" Type="0" Visible="true" Clicked="ue_MenuOptionsClicked" Selected="ue_MenuOptionsSelected" />
+          <Item Text="Close" PictureName="CloseBig!" Checked="false" Enabled="true" Tag="Close" Type="0" Visible="true" Clicked="ue_MenuCloseClicked" Selected="ue_MenuCloseSelected" />
+        </Master>
+      </ApplicationMenu>
+    </ApplicationButton>
+    
+    <Categories>
+      <Category Text="Help Desk" Enabled="true" Tag="Home" Visible="true">
+        
+        <Panel Text="Actions" PictureName="TabsSmall!" Enabled="true" Tag="Actions" Visible="true">
+          <LargeButton Text="Create" PictureName="AddBig!" Checked="false" DefaultCommand="true" Enabled="true" PowerTipText="Create" PowerTipDescription="Create a new support ticket." Tag="Create" Visible="true" Clicked="ue_ButtonCreateClicked" />
+          <LargeButton Text="Modify" PictureName="FileManagementBig!" Checked="false" DefaultCommand="true" Enabled="true" PowerTipText="Modify" PowerTipDescription="Modify selected support ticket." Tag="Modify" Visible="true" Clicked="ue_ButtonModifyClicked" />
+          <LargeButton Text="Delete" PictureName="CloseBig!" Checked="false" DefaultCommand="true" Enabled="true" PowerTipText="Delete" PowerTipDescription="Delete selected support ticket." Tag="Delete" Visible="true" Clicked="ue_ButtonDeleteClicked" />
+        </Panel>
+        
+        <Panel Text="Boards" PictureName="BoardSmall!" Enabled="true" Tag="Boards" Visible="true">
+          <LargeButton Text="Employees" PictureName="EmployeeBig!" Checked="false" DefaultCommand="true" Enabled="true" PowerTipText="Employees" PowerTipDescription="Employee infomation" Tag="Employees" Visible="true" Clicked="ue_ButtonEmployeesClicked" Selected="ue_ButtonEmployeesSelected" />
+          <LargeButton Text="Products" PictureName="ProductsBig!" Checked="false" DefaultCommand="true" Enabled="true" PowerTipText="Products" PowerTipDescription="Product infomation" Tag="Products" Visible="true" Clicked="ue_ButtonProductsClicked" Selected="ue_ButtonProductsSelected" />
+          <LargeButton Text="Orders" PictureName="OrdersBig!" Checked="false" DefaultCommand="true" Enabled="true" PowerTipText="Orders" PowerTipDescription="Order infomation" Tag="Orders" Visible="true" Clicked="ue_ButtonOrdersClicked" Selected="ue_ButtonOrdersSelected" />
+          <LargeButton Text="Reports" PictureName="ReportsBig!" Checked="false" DefaultCommand="true" Enabled="true" PowerTipText="Reports" PowerTipDescription="Report infomation" Tag="Reports" Visible="true" Clicked="ue_ButtonReportsClicked" Selected="ue_ButtonReportsSelected" />
+          <LargeButton Text="Tasks" PictureName="TasksBig!" Checked="false" DefaultCommand="true" Enabled="true" PowerTipText="Tasks" PowerTipDescription="Tasks infomation" Tag="Tasks" Visible="true" Clicked="ue_ButtonTasksClicked" Selected="ue_ButtonTasksSelected" />
+        </Panel>
+      </Category>
+    </Categories>
+  </RibbonItems>
+</RibbonBar>
